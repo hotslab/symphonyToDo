@@ -1,5 +1,14 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+# controllers:
+#     resource:
+#         path: ../src/Controller/
+#         namespace: App\Controller
+#     type: attribute
+
+api_login:
+    path: /login
+    controller: App\Controller\LoginController::index
+    methods: GET|HEAD
+app_register:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+    methods: GET|POST
